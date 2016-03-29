@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    card_view:cardCornerRadius="0dp"
+    android:layout_margin="5dp"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_placeholder"
+        android:clipChildren="true"
+        android:clipToPadding="true">
+
+        <!-- this image must be higher than the cell, to enable parallax ! -->
+
+        <ImageView
+            android:id="@+id/img_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".6"
+            android:scaleType="centerCrop"
+             />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@drawable/top_shadow"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="195dip"
+        android:background="@drawable/gradient_black_85" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22dip"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!-->-->
+
+        <TextView
+            android:id="@+id/txv_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+    <TextView
+        android:id="@+id/txv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="top"
+        android:layout_marginTop="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:singleLine="false"
+        android:gravity="top"
+        android:ellipsize="end"
+        android:height="50dp" />
+        <!--<ImageView-->
+            <!--android:layout_margin="7dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/img_row"-->
+            <!--/>-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:padding="2dp"
+        android:elevation="4dp">
+        <ProgressBar
+            android:indeterminate="true"
+            android:id="@+id/imageFront_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+
+            android:indeterminateTint="#00c8ff"
+            android:indeterminateTintMode="src_atop"
+            android:layout_gravity="center" />
+        <ImageView
+            android:id="@+id/image_column"
+            android:layout_width="160dip"
+            android:layout_height="95dip"
+            android:scaleType="centerCrop"
+             />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="185dip"
+        android:layout_marginRight="10dip"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:singleLine="false"
+        android:gravity="top"
+        android:ellipsize="end"
+        android:height="30dp" />
+
+
+        <RatingBar
+            android:id="@+id/ruleRatingBar"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dip"
+            android:layout_marginLeft="185dip"
+            android:layout_marginRight="10dip"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.5"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="2.5"
+            android:progressTint="@android:color/white"
+
+            android:progressBackgroundTint="@android:color/darker_gray"
+            android:secondaryProgressTint="@android:color/darker_gray"
+            android:scaleX="1"
+            android:scaleY="1"
+            />
+
+    <TextView
+        android:id="@+id/txv_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dip"
+        android:layout_marginLeft="270dip"
+        android:layout_marginRight="10dip"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:singleLine="false"
+        android:gravity="bottom"
+        android:height="30dp"
+        />
+</android.support.v7.widget.CardView>
